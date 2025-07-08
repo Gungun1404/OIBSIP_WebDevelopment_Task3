@@ -1,82 +1,101 @@
 ﻿# OIBSIP_WebDevelopment_Task3
- 🌡️ Temperature Converter Web App
- 
+🌡️ Temperature Converter
 📌 Objective
-The purpose of this project is to build a simple web-based Temperature Converter that allows users to:
-
-Input a temperature value
-
-Select the input unit (Fahrenheit, or Kelvin)
-
-Convert the temperature to another unit
-
-Display the converted value with the correct unit
+This project is a Temperature Converter Web App that allows users to convert temperatures from Fahrenheit or Kelvin to Celsius. The result is dynamically displayed in the UI.
 
 🧰 Tools Used
-HTML: For structuring the web page and user interface elements
+HTML5 – For creating the structure of the app
 
-CSS: For basic styling of the UI (optional enhancement)
+CSS3 – For styling the layout (linked via css/styles.css)
 
-JavaScript: For validating input, performing conversion logic, and updating the UI
+JavaScript – For handling the conversion logic and interactivity (js/app.js)
 
-🔄 Steps Performed
-HTML Setup:
+Boxicons & Font Awesome – For adding UI icons
 
-Created an input field for the temperature value
+🔄 Functionality Overview
+Users can:
 
-Added a dropdown (or radio buttons) for selecting the input unit ( Fahrenheit, Kelvin)
+Input a temperature value using a number field.
 
-Added a "Convert" button
+Select the unit of input temperature (Fahrenheit or Kelvin).
 
-Included an output section to display the result
+Click the Convert button.
 
-Validation:
+View the converted value in Celsius displayed on screen.
 
-Ensured the user input is a valid number before performing the conversion
+🧪 Conversion Logic (Implemented in app.js)
+Fahrenheit → Celsius
+(
+°
+𝐹
+−
+32
+)
+×
+5
+⁄
+9
+=
+°
+𝐶
+(°F−32)×5⁄9=°C
 
-Conversion Logic:
+Kelvin → Celsius
+𝐾
+−
+273.15
+=
+°
+𝐶
+K−273.15=°C
 
-Implemented temperature conversion formulas in JavaScript:
+The converted result is shown inside the <h2> element with ID celsius.
 
-Celsius ↔ Fahrenheit
+✅ Features
+Validates that the input is a number
 
-Celsius ↔ Kelvin
+Uses semantic HTML for accessibility
 
-Fahrenheit ↔ Kelvin
+Clean, mobile-friendly design
 
-Event Handling:
+Styled icons for a polished look
 
-Added a click event listener to the "Convert" button
+🚀 Steps to Run the Project
+Clone or download the repository.
 
-Converted the input temperature based on the selected unit and displayed the result dynamically
+Ensure the folder structure looks like this:
 
-✅ Outcome
-The result is a responsive and interactive temperature converter web application. Users can:
-
-Enter a temperature
-
-Choose the input unit
-
-Instantly view the converted value in the desired unit
-
-The tool is beginner-friendly and easily extendable. It handles basic validation and offers all three major temperature scales (Celsius, Fahrenheit, Kelvin).
-
-💡 Bonus Features (Optional)
-Input sanitization (e.g., preventing characters)
-
-Responsive design for mobile
-
-Unit-to-unit dropdown for selecting both from and to units
-
-Reset/clear button
-
-📂 File Structure
-pgsql
+markdown
 Copy
 Edit
 temperature-converter/
-│
-├── index.html      # Structure of the UI
-├── style.css       # Optional styling
-└── script.js       # Conversion logic and event handling
+├── index.html
+├── css/
+│   └── styles.css
+└── js/
+    └── app.js
+Open index.html in any modern web browser.
+
+💡 Future Enhancements
+Add bi-directional conversion (Celsius to Fahrenheit/Kelvin)
+
+Add Kelvin → Fahrenheit and Fahrenheit → Kelvin
+
+Allow users to choose both input and output units (e.g., dropdown for "From" and "To")
+
+Include input error handling and visual feedback
+
+Add a reset button
+
+📷 Sample UI Elements
+Input Field – For entering numeric temperature
+
+Select Menu – To choose temperature type (Fahrenheit/Kelvin)
+
+Convert Button – To trigger the conversion
+
+Result Area – Displays the converted value in Celsius
+
+👨‍💻 Author
+Designed and developed using HTML, CSS, and JavaScript with icon libraries for aesthetics.
 
